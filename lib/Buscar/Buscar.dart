@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
 
-
 class Buscar extends StatefulWidget {
   static final String routeName = 'Buscar';
   Buscar({Key? key}) : super(key: key);
@@ -76,12 +75,6 @@ class _BuscarState extends State<Buscar> {
                   ],
                 ),
               ),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Divider(
-              height: 2,
-              thickness: 0.5,
             ),
           ),
           SliverToBoxAdapter(

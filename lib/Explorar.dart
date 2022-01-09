@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
 
-
 class Explorar extends StatefulWidget {
   static final String routeName = 'Explorar';
   Explorar({Key? key}) : super(key: key);
@@ -70,12 +69,6 @@ class _ExplorarState extends State<Explorar> {
                     ),
                   )),
             ],
-          ),
-          SliverToBoxAdapter(
-            child: Divider(
-              height: 2,
-              thickness: 0.5,
-            ),
           ),
           SliverToBoxAdapter(
             child: Column(

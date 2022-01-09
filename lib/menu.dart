@@ -1,12 +1,13 @@
 import 'package:canditickets/Buscar/Buscar.dart';
 import 'package:canditickets/Buscar/CrearEntradas.dart';
 import 'package:canditickets/Explorar.dart';
+import 'package:canditickets/Favoritos/Favoritos.dart';
 import 'package:canditickets/Mapa.dart';
 import 'package:canditickets/Perfil/perfil.dart';
+import 'package:canditickets/Tickets/Tickets.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
-
 
 class Menu extends StatefulWidget {
   static const String routeName = 'MenuPrincipal';
@@ -77,9 +78,9 @@ class _MenuState extends State<Menu> {
       case 1:
         return Buscar();
       case 2:
-        return Perfil();
+        return Favoritos();
       case 3:
-        return EntradaAsientos();
+        return Tickets();
     }
   }
 }

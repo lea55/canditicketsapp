@@ -22,7 +22,7 @@ class _TicketsState extends State<Tickets> {
                 toolbarHeight: 85.0,
                 backgroundColor: Colors.white,
                 title: Text(
-                  'Pedidos',
+                  'Tus tickets',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 30,

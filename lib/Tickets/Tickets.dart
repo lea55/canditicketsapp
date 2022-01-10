@@ -12,34 +12,250 @@ class Tickets extends StatefulWidget {
 class _TicketsState extends State<Tickets> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            toolbarHeight: 85.0,
-            elevation: 0,
-            automaticallyImplyLeading: false,
-            centerTitle: false,
-            pinned: false,
-            floating: true,
-            backgroundColor: Colors.white,
-            title: Text(
-              'Pedidos',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30,
-                fontFamily: 'Plain',
-                fontWeight: FontWeight.bold,
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        body: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return <Widget>[
+              new SliverAppBar(
+                toolbarHeight: 85.0,
+                backgroundColor: Colors.white,
+                title: Text(
+                  'Pedidos',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontFamily: 'Plain',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                elevation: 0,
+                pinned: true,
+                floating: true,
+                bottom: TabBar(
+                  labelColor: Colors.black,
+                  unselectedLabelColor: HexColor('909090'),
+                  indicatorSize: TabBarIndicatorSize.label,
+                  indicatorColor: Colors.black,
+                  indicatorWeight: 4,
+                  isScrollable: false,
+                  tabs: [
+                    Tab(
+                        child: Text(
+                      'Proximos',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'DMSans',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    )),
+                    Tab(
+                        child: Text(
+                      'Pasadas',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'DMSans',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    )),
+                  ],
+                ),
               ),
-            ),
+            ];
+          },
+          body: TabBarView(
+            children: <Widget>[
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 10, right: 10, top: 20),
+                      height: 170,
+                      width: MediaQuery.of(context).size.width,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 170,
+                            width: 170,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(0),
+                              child: Image.asset(
+                                'assets/cande.jpg',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Concierto de Cande Gariso Verano X Cordoba',
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Miercoles 22-04-21 18:00 ',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Organiza Gran Rex',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                  height: 20,
+                                  width: 150,
+                                  decoration: BoxDecoration(
+                                      color: HexColor('FCC740'),
+                                      borderRadius: BorderRadius.circular(50)),
+                                  child: Center(
+                                    child: Text(
+                                      'Orden:#2343245634',
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontFamily: 'DMSans',
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 10, right: 10, top: 20),
+                      height: 170,
+                      width: MediaQuery.of(context).size.width,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 170,
+                            width: 170,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(0),
+                              child: Image.asset(
+                                'assets/portada.jpg',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Concierto de Cande Gariso Verano X Cordoba',
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Miercoles 22-04-21 18:00 ',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Organiza Gran Rex',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                  height: 20,
+                                  width: 150,
+                                  decoration: BoxDecoration(
+                                      color: HexColor('FCC740'),
+                                      borderRadius: BorderRadius.circular(50)),
+                                  child: Center(
+                                    child: Text(
+                                      'Orden:#2343245634',
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontFamily: 'DMSans',
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-          SliverToBoxAdapter(
-            child: Column(
-              children: [],
-            ),
-          )
-        ],
+        ),
+        backgroundColor: Colors.white,
       ),
     );
   }

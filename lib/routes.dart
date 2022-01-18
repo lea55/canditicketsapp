@@ -2,8 +2,10 @@ import 'package:canditickets/Buscar/Buscar.dart';
 import 'package:canditickets/Buscar/CrearEntradas.dart';
 import 'package:canditickets/Escanear/Escanear.dart';
 import 'package:canditickets/Explorar.dart';
+import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Favoritos/Favoritos.dart';
 import 'package:canditickets/Mapa.dart';
+import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/EditarPerfil.dart';
 import 'package:canditickets/Perfil/perfil.dart';
 import 'package:canditickets/Tickets/Tickets.dart';
@@ -17,8 +19,10 @@ final routes = <String, WidgetBuilder>{
   Buscar.routeName: (BuildContext context) => Buscar(),
   Menu.routeName: (BuildContext context) => Menu(),
   Mapa.routeName: (BuildContext context) => Mapa(),
+  LugaresPais.routeName: (BuildContext context) => LugaresPais(),
   Favoritos.routeName: (BuildContext context) => Favoritos(),
   Tickets.routeName: (BuildContext context) => Tickets(),
+  Notificaciones.routeName: (BuildContext context) => Notificaciones(),
   EntradaAsientos.routeName: (BuildContext context) => EntradaAsientos(),
   EditarPerfil.routeName: (BuildContext context) => EditarPerfil()
 };

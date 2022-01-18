@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:canditickets/Explorar/Lugares.dart';
+import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/perfil.dart';
 import 'package:canditickets/models/ListLugares.dart';
 import 'package:canditickets/models/ListaBares.dart';
@@ -27,7 +29,7 @@ class _ExplorarState extends State<Explorar> {
           SliverAppBar(
             automaticallyImplyLeading: false,
             centerTitle: false,
-            elevation: 0.5,
+            elevation: 0,
             pinned: false,
             floating: true,
             excludeHeaderSemantics: true,
@@ -50,7 +52,9 @@ class _ExplorarState extends State<Explorar> {
             ),
             actions: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Notificaciones.routeName);
+                },
                 icon: Icon(
                   Iconsax.notification,
                   color: Colors.black,
@@ -467,64 +471,69 @@ class CardHorizontalBares extends StatelessWidget {
 class CardHorizontalLugares extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 20, right: 20),
-      height: 200,
-      decoration: BoxDecoration(
-        color: HexColor('FCC740'),
-      ),
-      width: MediaQuery.of(context).size.width,
-      child: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(left: 20, top: 30, right: 20),
-            child: Text(
-              'Descubre mas ',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 29,
-                fontFamily: 'DMSans',
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, top: 0, right: 20),
-            child: Text(
-              'en formosa',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 29,
-                fontFamily: 'DMSans',
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: 10),
-            height: 48,
-            width: MediaQuery.of(context).size.width * 0.45,
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadiusDirectional.circular(50)),
-                  side: BorderSide(
-                    width: 2.0,
-                    color: Colors.black,
-                  )),
-              onPressed: () {},
+    return GestureDetector(
+      onTap: (() {
+        Navigator.pushNamed(context, LugaresPais.routeName);
+      }),
+      child: Container(
+        margin: EdgeInsets.only(left: 20, right: 20),
+        height: 200,
+        decoration: BoxDecoration(
+          color: HexColor('FCC740'),
+        ),
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(left: 20, top: 30, right: 20),
               child: Text(
-                'Sigue explorando',
+                'Descubre mas ',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 15,
+                  fontSize: 29,
                   fontFamily: 'DMSans',
                   fontWeight: FontWeight.w600,
                 ),
               ),
             ),
-          ),
-        ],
+            Container(
+              margin: EdgeInsets.only(left: 20, top: 0, right: 20),
+              child: Text(
+                'en formosa',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 29,
+                  fontFamily: 'DMSans',
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 10),
+              height: 48,
+              width: MediaQuery.of(context).size.width * 0.45,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusDirectional.circular(50)),
+                    side: BorderSide(
+                      width: 2.0,
+                      color: Colors.black,
+                    )),
+                onPressed: () {},
+                child: Text(
+                  'Sigue explorando',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontFamily: 'DMSans',
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -552,7 +561,9 @@ class CardLugares extends StatelessWidget {
                     color: Colors.white,
                     elevation: 0,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, LugaresPais.routeName);
+                      },
                       child: Stack(
                         children: [
                           Container(

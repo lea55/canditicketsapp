@@ -22,7 +22,7 @@ class _BuscarState extends State<Buscar> {
             toolbarHeight: 85.0,
             automaticallyImplyLeading: false,
             centerTitle: false,
-            elevation: 0.8,
+            elevation: 0,
             pinned: true,
             floating: true,
             backgroundColor: Colors.white,

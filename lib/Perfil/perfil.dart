@@ -1,3 +1,4 @@
+import 'package:canditickets/Login/IniciarSesion.dart';
 import 'package:canditickets/Perfil/EditarPerfil.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -39,7 +40,7 @@ class _PerfilState extends State<Perfil> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 30,
-                      fontFamily: 'Circular',
+                      fontFamily: 'Plain',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -495,7 +496,9 @@ class _PerfilState extends State<Perfil> {
                 height: 55,
                 width: MediaQuery.of(context).size.width,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, IniciarSesion.routeName);
+                  },
                   child: Text(
                     'Cerrar sesion',
                     style: TextStyle(

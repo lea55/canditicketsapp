@@ -37,13 +37,13 @@ class _ExplorarState extends State<Explorar> {
             title: Row(
               children: [
                 Container(
-                  height: 45,
+                  height: 40,
                   width: 180,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.contain,
                       image: AssetImage(
-                        'assets/logocanditicket.png',
+                        'assets/canditicket.png',
                       ),
                     ),
                   ),

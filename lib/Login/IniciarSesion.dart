@@ -54,7 +54,7 @@ class _IniciarSesionState extends State<IniciarSesion> {
             Container(
               margin: EdgeInsets.only(left: 20, top: 25, right: 20),
               child: Text(
-                'Inicia sesión para acceder a  los mejores eventos solo en Candi Tickets.',
+                'Accede a  los mejores eventos solo en Candi Tickets.',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

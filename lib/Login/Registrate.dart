@@ -1,17 +1,17 @@
-import 'package:canditickets/Login/Registrate.dart';
+import 'package:canditickets/Login/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
 
-class Login extends StatefulWidget {
-  Login({Key? key}) : super(key: key);
-  static final String routeName = 'Login';
+class Registrate extends StatefulWidget {
+  Registrate({Key? key}) : super(key: key);
+  static final String routeName = 'Registrate';
 
   @override
-  _LoginState createState() => _LoginState();
+  _RegistrateState createState() => _RegistrateState();
 }
 
-class _LoginState extends State<Login> {
+class _RegistrateState extends State<Registrate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +35,7 @@ class _LoginState extends State<Login> {
             Container(
               margin: EdgeInsets.only(left: 20, top: 25, right: 20),
               child: Text(
-                'Te damos la bienvenida nuevamente.',
+                'Conviértete en miembro de Candi Tickets.',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 25,
@@ -48,6 +48,100 @@ class _LoginState extends State<Login> {
               margin: EdgeInsets.only(
                 left: 20,
                 top: 40,
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    'Nombre',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'DMSans'),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20, top: 10),
+              height: 53,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      cursorColor: Colors.grey[500],
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        hintStyle: TextStyle(
+                            fontFamily: 'DMSans', fontWeight: FontWeight.w600),
+                        hintText: 'Nombre',
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            borderSide: BorderSide(
+                                color: HexColor('E0E0E0'), width: 1.8)),
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            borderSide:
+                                BorderSide(color: Colors.black, width: 1.8)),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                left: 20,
+                top: 20,
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    'Apellido',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'DMSans'),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, right: 20, top: 10),
+              height: 53,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      cursorColor: Colors.grey[500],
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        hintStyle: TextStyle(
+                            fontFamily: 'DMSans', fontWeight: FontWeight.w600),
+                        hintText: 'Apellido',
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            borderSide: BorderSide(
+                                color: HexColor('E0E0E0'), width: 1.8)),
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            borderSide:
+                                BorderSide(color: Colors.black, width: 1.8)),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                left: 20,
+                top: 20,
               ),
               child: Row(
                 children: [
@@ -139,24 +233,6 @@ class _LoginState extends State<Login> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(
-                left: 20,
-                top: 20,
-              ),
-              child: Row(
-                children: [
-                  Text(
-                    'Te has olvidado la contraseña?',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        fontFamily: 'DMSans'),
-                  ),
-                ],
-              ),
-            ),
-            Container(
               margin: EdgeInsets.only(left: 20, right: 20, top: 30),
               width: MediaQuery.of(context).size.width,
               height: 55,
@@ -168,7 +244,9 @@ class _LoginState extends State<Login> {
                     borderRadius: BorderRadius.all(Radius.circular(40)),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Login.routeName);
+                },
                 child: Text(
                   'Iniciar sesión',
                   style: TextStyle(
@@ -186,9 +264,7 @@ class _LoginState extends State<Login> {
                 height: 55,
                 width: MediaQuery.of(context).size.width,
                 child: OutlinedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, Registrate.routeName);
-                  },
+                  onPressed: () {},
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

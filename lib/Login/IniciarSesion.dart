@@ -1,3 +1,4 @@
+import 'package:canditickets/Login/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
@@ -176,7 +177,9 @@ class _IniciarSesionState extends State<IniciarSesion> {
                 height: 55,
                 width: MediaQuery.of(context).size.width,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, Login.routeName);
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

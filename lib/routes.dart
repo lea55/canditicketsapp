@@ -5,6 +5,7 @@ import 'package:canditickets/Explorar.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Favoritos/Favoritos.dart';
 import 'package:canditickets/Login/IniciarSesion.dart';
+import 'package:canditickets/Login/Login.dart';
 import 'package:canditickets/Mapa.dart';
 import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/EditarPerfil.dart';
@@ -15,6 +16,7 @@ import 'package:flutter/material.dart';
 
 final routes = <String, WidgetBuilder>{
   IniciarSesion.routeName: (BuildContext context) => IniciarSesion(),
+  Login.routeName: (BuildContext context) => Login(),
   Perfil.routeName: (BuildContext context) => Perfil(),
   Explorar.routeName: (BuildContext context) => Explorar(),
   Escanear.routeName: (BuildContext context) => Escanear(),

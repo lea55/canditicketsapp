@@ -70,6 +70,8 @@ class _LoginState extends State<Login> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,
@@ -117,6 +119,8 @@ class _LoginState extends State<Login> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,

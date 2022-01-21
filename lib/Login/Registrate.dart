@@ -70,6 +70,8 @@ class _RegistrateState extends State<Registrate> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,
@@ -117,6 +119,8 @@ class _RegistrateState extends State<Registrate> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,
@@ -164,6 +168,8 @@ class _RegistrateState extends State<Registrate> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,
@@ -211,6 +217,8 @@ class _RegistrateState extends State<Registrate> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: TextStyle(
+                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
                       cursorColor: Colors.grey[500],
                       decoration: InputDecoration(
                         filled: true,

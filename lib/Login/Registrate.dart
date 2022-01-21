@@ -256,7 +256,7 @@ class _RegistrateState extends State<Registrate> {
                   Navigator.pushNamed(context, Login.routeName);
                 },
                 child: Text(
-                  'Iniciar sesión',
+                  'Registrate',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
@@ -278,7 +278,7 @@ class _RegistrateState extends State<Registrate> {
                     children: [
                       Container(
                         child: Text(
-                          'Registrate',
+                          'Iniciar sesión',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,

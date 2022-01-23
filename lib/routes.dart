@@ -2,6 +2,7 @@ import 'package:canditickets/Buscar/Buscar.dart';
 import 'package:canditickets/Buscar/CrearEntradas.dart';
 import 'package:canditickets/Escanear/Escanear.dart';
 import 'package:canditickets/Explorar.dart';
+import 'package:canditickets/Explorar/InfoEvento.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Favoritos/Favoritos.dart';
 import 'package:canditickets/Login/IniciarSesion.dart';
@@ -18,6 +19,7 @@ import 'package:flutter/material.dart';
 final routes = <String, WidgetBuilder>{
   IniciarSesion.routeName: (BuildContext context) => IniciarSesion(),
   Registrate.routeName: (BuildContext context) => Registrate(),
+  InfoEvento.routeName: (BuildContext context) => InfoEvento(),
   Login.routeName: (BuildContext context) => Login(),
   Perfil.routeName: (BuildContext context) => Perfil(),
   Explorar.routeName: (BuildContext context) => Explorar(),

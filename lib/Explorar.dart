@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:canditickets/Explorar/InfoEvento.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/perfil.dart';
@@ -247,7 +248,13 @@ class CardHorizontal extends StatelessWidget {
   }
 }
 
-class CardHorizontalBares extends StatelessWidget {
+class CardHorizontalBares extends StatefulWidget {
+  bool favorite = false;
+  @override
+  State<CardHorizontalBares> createState() => _CardHorizontalBaresState();
+}
+
+class _CardHorizontalBaresState extends State<CardHorizontalBares> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -269,7 +276,9 @@ class CardHorizontalBares extends StatelessWidget {
                     color: Colors.white,
                     elevation: 0,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, InfoEvento.routeName);
+                      },
                       borderRadius: BorderRadius.circular(0),
                       child: Column(
                         children: [
@@ -289,12 +298,21 @@ class CardHorizontalBares extends StatelessWidget {
                                 right: 0.0,
                                 top: 10.0,
                                 child: MaterialButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      if (widget.favorite) {
+                                        widget.favorite = false;
+                                      } else {
+                                        widget.favorite = true;
+                                      }
+                                    });
+                                  },
                                   color: Colors.white,
                                   textColor: Colors.white,
                                   child: Icon(
-                                    Iconsax.heart,
-                                    size: 20,
+                                    !widget.favorite
+                                        ? Iconsax.heart
+                                        : Iconsax.heart5,
                                     color: Colors.black,
                                   ),
                                   padding: EdgeInsets.all(10),

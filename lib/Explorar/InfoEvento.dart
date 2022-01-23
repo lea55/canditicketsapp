@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:canditickets/Explorar.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/perfil.dart';
@@ -276,12 +277,186 @@ class _InfoEventoState extends State<InfoEvento> {
                     ),
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.only(left: 20, top: 25, bottom: 10),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Acerca de',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontFamily: 'Circular',
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 20,
+                    right: 20,
+                    top: 10,
+                  ),
+                  child: Text(
+                    'Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.Evento para recaudar fondos para ayudar a las asociones. Evento para recaudar fondos para ayudar a las asociones.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontFamily: 'DMSans',
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Divider(
+                  color: Colors.grey[300],
+                  thickness: 10,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 20, top: 0, bottom: 10),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Ubicación',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontFamily: 'Circular',
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                CardUbicacion(),
+                SizedBox(
+                  height: 20,
+                ),
+                Divider(
+                  color: Colors.grey[300],
+                  thickness: 10,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: EdgeInsets.only(
+                    left: 20,
+                  ),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Otros eventos',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontFamily: 'Circular',
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                CardHorizontalBares()
               ],
             ),
           )
         ],
       ),
     );
+  }
+}
+
+class CardUbicacion extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        width: MediaQuery.of(context).size.width,
+        height: 300,
+        margin: EdgeInsets.only(left: 15, right: 15),
+        child: Card(
+          color: Colors.white,
+          elevation: 1,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(10),
+            onTap: () {},
+            child: Column(
+              children: [
+                Stack(alignment: Alignment.center, children: [
+                  Container(
+                    height: 220,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(10)),
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width,
+                        child: Image.asset(
+                          'assets/mapa.png',
+                          fit: BoxFit.cover,
+                          repeat: ImageRepeat.noRepeat,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle, color: Colors.black),
+                    child: Icon(
+                      Iconsax.location,
+                      color: Colors.white,
+                    ),
+                  ),
+                ]),
+                Container(
+                  margin: EdgeInsets.only(top: 10, left: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Mcal. Estigarribia y Avda.Avidores del Chaco 3454',
+                        style: TextStyle(
+                          color: HexColor('2D2D2D'),
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'DMSans',
+                          fontSize: 15,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 5, left: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Formosa,Argentina',
+                        style: TextStyle(
+                          color: HexColor('2D2D2D'),
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'DMSans',
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ));
   }
 }
 

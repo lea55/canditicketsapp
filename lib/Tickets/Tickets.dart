@@ -71,13 +71,13 @@ class _TicketsState extends State<Tickets> {
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Container(
-                            height: 170,
-                            width: 170,
+                            height: 150,
+                            width: 150,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0),
                               child: Image.asset(
@@ -98,9 +98,9 @@ class _TicketsState extends State<Tickets> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -164,13 +164,13 @@ class _TicketsState extends State<Tickets> {
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Container(
-                            height: 170,
-                            width: 170,
+                            height: 150,
+                            width: 150,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(0),
                               child: Image.asset(
@@ -191,9 +191,9 @@ class _TicketsState extends State<Tickets> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),

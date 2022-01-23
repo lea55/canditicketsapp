@@ -71,14 +71,14 @@ class _FavoritosState extends State<Favoritos> {
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -115,9 +115,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -175,14 +175,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -219,9 +219,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -279,14 +279,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -323,9 +323,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -383,14 +383,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -427,9 +427,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -487,14 +487,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -531,9 +531,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -591,14 +591,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -635,9 +635,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -695,14 +695,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -739,9 +739,9 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -799,14 +799,14 @@ class _FavoritosState extends State<Favoritos> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 10, right: 10, top: 20),
-                      height: 170,
+                      height: 150,
                       width: MediaQuery.of(context).size.width,
                       child: Row(
                         children: [
                           Stack(children: [
                             Container(
-                              height: 170,
-                              width: 170,
+                              height: 150,
+                              width: 150,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(0),
                                 child: Image.asset(
@@ -843,9 +843,113 @@ class _FavoritosState extends State<Favoritos> {
                                 child: Text(
                                   'Concierto de Cande Gariso Verano X Cordoba',
                                   style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 16,
                                     fontFamily: 'DMSans',
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Miercoles 22-04-21 18:00 ',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Organiza Gran Rex',
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                  height: 20,
+                                  width: 150,
+                                  decoration: BoxDecoration(
+                                      color: HexColor('FCC740'),
+                                      borderRadius: BorderRadius.circular(50)),
+                                  child: Center(
+                                    child: Text(
+                                      'A partir de 5000',
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontFamily: 'DMSans',
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 10, right: 10, top: 20),
+                      height: 150,
+                      width: MediaQuery.of(context).size.width,
+                      child: Row(
+                        children: [
+                          Stack(children: [
+                            Container(
+                              height: 150,
+                              width: 150,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(0),
+                                child: Image.asset(
+                                  'assets/cande.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                                right: -10,
+                                top: 10.0,
+                                child: MaterialButton(
+                                  onPressed: () {},
+                                  color: Colors.white,
+                                  textColor: Colors.white,
+                                  child: Icon(
+                                    Iconsax.heart,
+                                    size: 20,
+                                    color: Colors.black,
+                                  ),
+                                  padding: EdgeInsets.all(10),
+                                  shape: CircleBorder(),
+                                )),
+                          ]),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.50,
+                                child: Text(
+                                  'Concierto de Cande Gariso Verano X Cordoba',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'DMSans',
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -937,7 +1041,7 @@ class _FavoritosState extends State<Favoritos> {
                                   child: Text(
                                     'Complejo Jockey Club',
                                     style: TextStyle(
-                                      fontSize: 17,
+                                      fontSize: 16,
                                       fontFamily: 'DMSans',
                                       fontWeight: FontWeight.w600,
                                     ),

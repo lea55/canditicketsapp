@@ -389,7 +389,7 @@ class _CardHorizontalBaresState extends State<CardHorizontalBares> {
                                                 style: TextStyle(
                                                     color: Colors.black,
                                                     fontSize: 15.5,
-                                                    fontFamily: 'Circular',
+                                                    fontFamily: 'DMSans',
                                                     fontWeight:
                                                         FontWeight.w600),
                                               ),
@@ -412,9 +412,9 @@ class _CardHorizontalBaresState extends State<CardHorizontalBares> {
                                       listaBares[index]['evento'],
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontWeight: FontWeight.w400,
-                                        fontFamily: 'Circular',
-                                        fontSize: 17,
+                                        fontWeight: FontWeight.w600,
+                                        fontFamily: 'DMSans',
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ],

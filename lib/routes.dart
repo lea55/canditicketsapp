@@ -11,13 +11,17 @@ import 'package:canditickets/Login/Registrate.dart';
 import 'package:canditickets/Mapa.dart';
 import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/EditarPerfil.dart';
+import 'package:canditickets/Perfil/Idioma.dart';
+import 'package:canditickets/Perfil/TerminoyCondiciones.dart';
 import 'package:canditickets/Perfil/perfil.dart';
 import 'package:canditickets/Tickets/Tickets.dart';
 import 'package:canditickets/menu.dart';
 import 'package:flutter/material.dart';
 
 final routes = <String, WidgetBuilder>{
+  Idioma.routeName: (BuildContext context) => Idioma(),
   IniciarSesion.routeName: (BuildContext context) => IniciarSesion(),
+  TerminoCondiciones.routeName: (BuildContext context) => TerminoCondiciones(),
   Registrate.routeName: (BuildContext context) => Registrate(),
   InfoEvento.routeName: (BuildContext context) => InfoEvento(),
   Login.routeName: (BuildContext context) => Login(),

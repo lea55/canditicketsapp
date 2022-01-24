@@ -1,5 +1,7 @@
 import 'package:canditickets/Login/IniciarSesion.dart';
 import 'package:canditickets/Perfil/EditarPerfil.dart';
+import 'package:canditickets/Perfil/Idioma.dart';
+import 'package:canditickets/Perfil/TerminoyCondiciones.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
@@ -253,7 +255,9 @@ class _PerfilState extends State<Perfil> {
                   color: Colors.white,
                   size: 18,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Idioma.routeName);
+                },
               ),
             ),
             Divider(
@@ -448,7 +452,9 @@ class _PerfilState extends State<Perfil> {
                   color: Colors.white,
                   size: 18,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, TerminoCondiciones.routeName);
+                },
               ),
             ),
             Divider(
@@ -481,7 +487,9 @@ class _PerfilState extends State<Perfil> {
                   color: Colors.white,
                   size: 18,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, TerminoCondiciones.routeName);
+                },
               ),
             ),
             Divider(

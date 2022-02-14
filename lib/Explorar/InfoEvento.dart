@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:canditickets/Explorar.dart';
+import 'package:canditickets/Explorar/Entradas.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
 import 'package:canditickets/Notificaciones/Notificaciones.dart';
 import 'package:canditickets/Perfil/perfil.dart';
@@ -264,7 +265,9 @@ class _InfoEventoState extends State<InfoEvento> {
                           borderRadius: BorderRadius.all(Radius.circular(60)),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, Entradas.routeName);
+                      },
                       child: Text(
                         'Ver entradas',
                         style: TextStyle(

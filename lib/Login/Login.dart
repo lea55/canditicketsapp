@@ -63,34 +63,30 @@ class _LoginState extends State<Login> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 20, right: 20, top: 10),
-              height: 53,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextField(
-                      style: TextStyle(
-                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
-                      cursorColor: Colors.grey[500],
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: Colors.white,
-                        hintStyle: TextStyle(
-                            fontFamily: 'DMSans', fontWeight: FontWeight.w600),
-                        hintText: 'Dirección de correo electrónico',
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                            borderSide: BorderSide(
-                                color: HexColor('E0E0E0'), width: 1.8)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                            borderSide:
-                                BorderSide(color: Colors.black, width: 1.8)),
-                      ),
-                    ),
-                  ),
-                ],
+              margin: EdgeInsets.only(left: 15, right: 15, bottom: 0, top: 10),
+              height: 58,
+              child: TextField(
+                style: TextStyle(
+                    fontFamily: 'DMSans',
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w600),
+                cursorColor: Colors.grey[500],
+                decoration: InputDecoration(
+                  hintStyle: TextStyle(
+                      fontFamily: 'DMSans',
+                      fontSize: 15.5,
+                      fontWeight: FontWeight.w600),
+                  hintText: 'Dirección de correo eletrónico',
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 10, vertical: 17),
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      borderSide:
+                          BorderSide(color: HexColor('E0E0E0'), width: 1.8)),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      borderSide: BorderSide(color: Colors.black, width: 1.8)),
+                ),
               ),
             ),
             Container(
@@ -112,34 +108,30 @@ class _LoginState extends State<Login> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 20, right: 20, top: 10),
-              height: 53,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextField(
-                      style: TextStyle(
-                          fontFamily: 'DMSans', fontWeight: FontWeight.w600),
-                      cursorColor: Colors.grey[500],
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: Colors.white,
-                        hintStyle: TextStyle(
-                            fontFamily: 'DMSans', fontWeight: FontWeight.w600),
-                        hintText: 'Contraseña',
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                            borderSide: BorderSide(
-                                color: HexColor('E0E0E0'), width: 1.8)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                            borderSide:
-                                BorderSide(color: Colors.black, width: 1.8)),
-                      ),
-                    ),
-                  ),
-                ],
+              margin: EdgeInsets.only(left: 15, right: 15, bottom: 20, top: 10),
+              height: 58,
+              child: TextField(
+                style: TextStyle(
+                    fontFamily: 'DMSans',
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w600),
+                cursorColor: Colors.grey[500],
+                decoration: InputDecoration(
+                  hintStyle: TextStyle(
+                      fontFamily: 'DMSans',
+                      fontSize: 15.5,
+                      fontWeight: FontWeight.w600),
+                  hintText: 'Contraseña',
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 10, vertical: 17),
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      borderSide:
+                          BorderSide(color: HexColor('E0E0E0'), width: 1.8)),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      borderSide: BorderSide(color: Colors.black, width: 1.8)),
+                ),
               ),
             ),
             Container(

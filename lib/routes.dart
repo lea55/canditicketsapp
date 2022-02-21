@@ -2,6 +2,8 @@ import 'package:canditickets/Buscar/Buscar.dart';
 import 'package:canditickets/Buscar/CrearEntradas.dart';
 import 'package:canditickets/Escanear/Escanear.dart';
 import 'package:canditickets/Explorar.dart';
+import 'package:canditickets/Explorar/Cashlees.dart';
+import 'package:canditickets/Explorar/CuponDescuento.dart';
 import 'package:canditickets/Explorar/Entradas.dart';
 import 'package:canditickets/Explorar/InfoEvento.dart';
 import 'package:canditickets/Explorar/Lugares.dart';
@@ -21,6 +23,8 @@ import 'package:flutter/material.dart';
 
 final routes = <String, WidgetBuilder>{
   Idioma.routeName: (BuildContext context) => Idioma(),
+  CuponDescuento.routeName: (BuildContext context) => CuponDescuento(),
+  Cashlees.routeName: (BuildContext context) => Cashlees(),
   Entradas.routeName: (BuildContext context) => Entradas(),
   IniciarSesion.routeName: (BuildContext context) => IniciarSesion(),
   TerminoCondiciones.routeName: (BuildContext context) => TerminoCondiciones(),

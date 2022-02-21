@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../Explorar/Cashlees.dart';
+
 class Perfil extends StatefulWidget {
   Perfil({Key? key}) : super(key: key);
   static final String routeName = 'Perfil';
@@ -111,7 +113,7 @@ class _PerfilState extends State<Perfil> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Mis compras',
+                      'Cargas Cashlees',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 16,
@@ -125,7 +127,9 @@ class _PerfilState extends State<Perfil> {
                   color: Colors.white,
                   size: 18,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Cashlees.routeName);
+                },
               ),
             ),
             Divider(

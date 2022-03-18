@@ -72,11 +72,13 @@ class _LoginState extends State<Login> {
                     fontWeight: FontWeight.w600),
                 cursorColor: Colors.grey[500],
                 decoration: InputDecoration(
+                  floatingLabelBehavior: FloatingLabelBehavior.never,
+                  label: Text('Dirección de correo electrónico'),
                   hintStyle: TextStyle(
                       fontFamily: 'DMSans',
                       fontSize: 15.5,
                       fontWeight: FontWeight.w600),
-                  hintText: 'Dirección de correo eletrónico',
+                  hintText: 'Dirección de correo electrónico',
                   contentPadding:
                       EdgeInsets.symmetric(horizontal: 10, vertical: 17),
                   enabledBorder: OutlineInputBorder(
